@@ -1,0 +1,92 @@
+/* Umum */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    display: flex;
+}
+
+/* Konten Utama */
+.admin-content {
+    margin-top: 0px;
+    flex: 1;
+    transition: margin-left 0.3s ease;
+    background-color: #fffafa;
+}
+.admin-navbar:hover {
+    width: 280px;  /* Navbar akan meluas pada hover */
+}
+
+/* Heading utama */
+.header {
+    background-color: #029F99;
+    margin-top: 0px;
+    margin-left: 0px;
+    padding-top: 15px;
+    padding-right: 15px;
+    padding-bottom: 7px; /* Menambahkan padding agar header lebih besar */
+    color: #fff;
+    top: 0;  /* Menjauhkan header dari navbar kiri (dengan asumsi lebar navbar 250px) */ /* Menyesuaikan lebar header setelah memperhitungkan navbar kiri */
+    z-index: 1000;  /* Agar header tetap di atas konten */
+}
+
+/* Ukuran teks pada header */
+.header h1 {
+    font-size: 20px;  /* Membuat teks header lebih besar */
+    margin: 0;
+    padding-left: 15px;
+}
+
+/* Tabel untuk monitoring peminjaman mobil */
+.admin-content table {
+    width: 97%;
+    border-collapse: collapse;
+    margin-top: 5px; /* Memberikan jarak antara tabel dan header yang telah di-fixed */
+}
+
+.admin-content table th, .admin-content table td {
+    padding: 0px;
+    text-align: center;
+    background-color: #dae3e331;
+}
+
+.admin-content table th {
+    padding-top: 3px;
+    background-color: #c7d7d837;
+    color: black;
+}
+
+.admin-content table tr:nth-child(even) {
+    background-color: #9d7b7b;
+}
+
+.admin-content table tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Tombol */
+.admin-content .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 30px 0px;
+    border: none;
+    border-radius: 20px;
+    background-color: #08ba93;
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.admin-content .btn:hover {
+    background-color: #0056b3;
+}
+
+/* Footer */
+
+
+.kiri {
+    margin-left: 25px;
+}

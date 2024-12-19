@@ -1,0 +1,103 @@
+/* CSS umum untuk body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    background-image: url("https://www.sucofindo.co.id/wp-content/uploads/2022/10/Header-tentang-kami-scaled.jpg");
+    background-repeat: repeat;
+    background-size: 100% 100%; /* Gambar akan mengisi seluruh area tanpa ruang kosong */
+    background-position: top center; /* Menempatkan gambar di tengah */
+    background-attachment: scroll; /* Background tetap saat scroll */
+}
+
+/* Container Register */
+.register-container {
+    max-width: 400px;
+    width: 100%;
+    margin: 57px auto;
+    padding: 5px 30px 10px 30px;
+    background: #fff;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 0%;
+}
+.register-logo {
+    margin-left: 40%;
+    height: 65px;  /* Mengurangi ukuran tinggi logo */
+    width: 90px;
+}
+
+/* Styling untuk label form */
+.register-container form label {
+    display: block;
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+/* Styling untuk input form */
+.register-container form input {
+    width: 100%;
+    padding: 12px 0px 12px 15px; /* Padding input disamakan dengan login */
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+.register-container form input:focus {
+    border-color: #009CDF;
+    outline: none;
+}
+
+/* Styling untuk tombol register */
+.register-container form button {
+    width: 25%;              /* Menetapkan lebar tombol lebih kecil */
+    padding: 12px;           /* Padding tetap seperti sebelumnya */
+    background: #009CDF;     /* Warna tombol sama dengan login */
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: block;          /* Mengubah tombol menjadi elemen block untuk bisa diberi margin */
+    margin: 0 auto;          /* Memusatkan tombol secara horizontal */
+}
+
+.register-container form button:hover {
+    background-color: #1A4980;
+}
+
+/* Error message styling */
+.error {
+    color: red;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+.motto {
+    text-align: center;
+    font-size: small;
+    
+}
+/* Styling untuk link pendaftaran */
+p {
+    text-align: center;
+}
+
+a {
+    color: #009CDF;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}

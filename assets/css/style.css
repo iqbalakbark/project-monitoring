@@ -1,0 +1,66 @@
+html, body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%; /* Membuat body mengisi seluruh tinggi viewport */
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%; /* Menjamin wrapper memiliki tinggi 100% dari viewport */
+}
+
+.main-content {
+    flex: 1; /* Membuat konten utama fleksibel, agar mengisi ruang yang tersisa */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 10px; /* Mengurangi padding supaya navbar lebih kompak */
+    background-color: #1A4980;
+    color: #fff;
+    height: 50px;  /* Menentukan tinggi navbar agar lebih kecil */
+}
+
+.navbar-content {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.navbar-logo {
+    height: 40px;  /* Mengurangi ukuran tinggi logo */
+    width: 80px;   /* Mengurangi ukuran lebar logo */
+}
+
+.navbar-title {
+    margin-top: 15;  /* Mengurangi margin atas untuk penempatan yang lebih rapat */
+    font-size: 16px;  /* Mengurangi ukuran font judul navbar */
+    font-weight: bold;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #fff;
+}
+
+/* Footer tetap berada di bawah */
+footer {
+    text-align: center;
+    padding: 0px 10px;  /* Mengurangi padding vertikal dan horizontal */
+    background: #333;
+    color: #fff;
+    margin-top: auto; /* Memastikan footer berada di bawah konten */
+    font-size: 12px;   /* Mengurangi ukuran font agar footer lebih kecil */
+}

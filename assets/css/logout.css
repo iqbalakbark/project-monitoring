@@ -1,0 +1,37 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+.logout-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logout-container h2 {
+    margin-bottom: 20px;
+}
+
+.logout-container p {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.logout-container a {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    background: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.logout-container a:hover {
+    background: #555;
+}

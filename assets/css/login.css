@@ -1,0 +1,106 @@
+
+/* CSS umum untuk body */
+body {
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("https://www.sucofindo.co.id/wp-content/uploads/2022/10/Header-tentang-kami-scaled.jpg");
+    background-repeat: repeat;
+    background-size: 100% 100%; /* Gambar akan mengisi seluruh area tanpa ruang kosong */
+    background-position: top center; /* Menempatkan gambar di tengah */
+    background-attachment: scroll; /* Background tetap saat scroll */
+}
+
+
+
+.login-container {
+    max-width: 400px;
+    width: 100%;
+    margin: 94px auto;
+    padding: 5px 30px 10px 30px;
+    background: #fff;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 0px;
+}
+.login-logo {
+    margin-left: 40%;
+    height: 65px;  /* Mengurangi ukuran tinggi logo */
+    width: 90px;
+}
+/* Styling form input */
+.login-container form label {
+    display: block;
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+.login-container form input {
+    width: 100%;
+    padding: 12px 0px 12px 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+.login-container form input:focus {
+    border-color: #009CDF;
+    outline: none;
+}
+
+
+.login-container form button {
+    width: 25%;              /* Menetapkan lebar tombol lebih kecil */
+    padding: 12px;           /* Padding tetap seperti sebelumnya */
+    background: #009CDF;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: block;          /* Mengubah tombol menjadi elemen block untuk bisa diberi margin */
+    margin: 0 auto;          /* Memusatkan tombol secara horizontal */
+}
+
+
+.login-container form button:hover {
+    background-color: #1A4980;
+}
+
+/* Error message styling */
+.error {
+    color: red;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+/* Styling untuk link pendaftaran */
+.motto {
+    text-align: center;
+    font-size: small;
+    
+}
+p {
+    text-align: center;
+    font-size: medium;
+}
+
+a {
+    color: #009CDF;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
