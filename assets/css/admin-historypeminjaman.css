@@ -42,7 +42,7 @@ body {
 .admin-content table {
     width: 97%;
     border-collapse: collapse;
-    margin-top: 50px; /* Memberikan jarak antara tabel dan header yang telah di-fixed */
+    margin-top: 0px; /* Memberikan jarak antara tabel dan header yang telah di-fixed */
 }
 
 .admin-content table th, .admin-content table td {

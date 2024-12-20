@@ -11,54 +11,50 @@ if (!isset($_SESSION['user_id']) || $_SESSION['role'] !== 'admin') {
 
 <?php include '../includes/header.php'; ?>
 <?php include '../includes/navbar.php'; ?>
-<link rel="stylesheet" href="../assets/css/admin-datapeminjaman.css">
+<link rel="stylesheet" href="../assets/css/admin-historypeminjaman.css">
 <?php include '../includes/navbaradmin.php'; ?>
 
 <div class="admin-content">
     <div class="header">
-        <h1>DATA PEMINJAMAN</h1>
+        <h1>HISTORY PEMESANAN</h1>
     </div>
     <div class="kiri">
-        <!-- Tabel Data Kendaraan -->
+    <a href="add-car.php" class="btn btn-add">export to excel</a>
+        <!-- Tabel History Pemesanan -->
         <table>
             <thead>
                 <tr>
                     <th>No</th>
+                    <th>ID Pemesanan</th>
                     <th>Nama Kendaraan</th>
                     <th>Tanggal Pemesanan</th>
-                    <th>Tanggal Pengembalian</th>
                     <th>Nama Driver</th>
-                    <th style='padding-left: 30px;'>Order</th>
-                    <th style='padding-left: 0px;' >Action</th>
+                    <th>Order</th>
                 </tr>
             </thead>
             <tbody>
                 <?php
                 try {
-                    // Query untuk mengambil data dari tabel mobil
-                    $stmt = $pdo->query("SELECT id, nama_kendaraan, no_polisi, jenis_kendaraan, status FROM mobil");
+                    // Query untuk mengambil data dari tabel pemesanan
+                    $stmt = $pdo->query("SELECT p.id_pemesanan, p.nama_kendaraan, p.tanggal_pemesanan, p.nama_driver, p.order
+                                         FROM pemesanan p
+                                         ORDER BY p.tanggal_pemesanan DESC");
                     $no = 1;
 
                     if ($stmt->rowCount() > 0) {
                         while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
                             echo "<tr>
                                 <td>{$no}</td>
+                                <td>{$row['id_pemesanan']}</td>
                                 <td>{$row['nama_kendaraan']}</td>
-                                <td>{$row['no_polisi']}</td>
-                                <td>{$row['jenis_kendaraan']}</td>
-                                <td>{$row['status']}</td>
-                                <td style='padding-left: 30px;'>{$row['order']}</td>
-                                <td style='padding-left: 0px;'>
-                                    <a href='edit-car.php?id={$row['id']}'>
-                                    <img src='../assets/images/disetujui-icon.png' class='icon'></a>
-                                    <a href='delete-car.php?id={$row['id']}'onclick='return confirm(\"Yakin ingin menghapus data ini?\");'>
-                                    <img src='../assets/images/ditolak-icon.png' class='icon'</a>
-                                </td>
+                                <td>{$row['tanggal_pemesanan']}</td>
+                                <td>{$row['nama_driver']}</td>
+                                <td>{$row['order']}</td>
                             </tr>";
                             $no++;
                         }
                     } else {
-                        echo "<tr><td colspan='6' style='text-align:center;'>Tidak ada data peminjaman.</td></tr>";
+                        echo "<tr><td colspan='6' style='text-align:center;'>Tidak ada history pemesanan.</td></tr>";
                     }
                 } catch (PDOException $e) {
                     echo "<tr><td colspan='6' style='text-align:center;'>Terjadi kesalahan: {$e->getMessage()}</td></tr>";
@@ -70,5 +66,4 @@ if (!isset($_SESSION['user_id']) || $_SESSION['role'] !== 'admin') {
     </div>
             </div>
 </div>
-
 <?php include '../includes/footer.php'; ?>
