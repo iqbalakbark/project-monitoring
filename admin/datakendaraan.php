@@ -51,8 +51,10 @@ if (!isset($_SESSION['user_id']) || $_SESSION['role'] !== 'admin') {
                                 <td>{$row['jenis_kendaraan']}</td>
                                 <td>{$row['status']}</td>
                                 <td>
-                                    <a href='edit-car.php?id={$row['id']}' class='btn btn-edit'>Edit</a>
-                                    <a href='delete-car.php?id={$row['id']}' class='btn btn-delete' onclick='return confirm(\"Yakin ingin menghapus data ini?\");'>Hapus</a>
+                                    <a href='edit-car.php?id={$row['id']}'>
+                                    <img src='../assets/images/edit-icon.png' class='icon'></a>
+                                    <a href='delete-car.php?id={$row['id']}'onclick='return confirm(\"Yakin ingin menghapus data ini?\");'>
+                                    <img src='../assets/images/delete-icon.png' class='icon'</a>
                                 </td>
                             </tr>";
                             $no++;

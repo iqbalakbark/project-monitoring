@@ -80,6 +80,7 @@ body {
     transition: background-color 0.3s;
 }
 
+
 .admin-content .btn:hover {
     background-color: #0056b3;
 }
@@ -89,4 +90,9 @@ body {
 
 .kiri {
     margin-left: 25px;
+}
+.admin-content .icon {
+    margin-top: 5px;
+    width: 30px;
+    height: 30px ;
 }
