@@ -18,8 +18,7 @@ if (!isset($_SESSION['user_id']) || $_SESSION['role'] !== 'admin') {
     <div class="header">
         <h1>HISTORY PEMESANAN</h1>
     </div>
-    <div class="kiri">
-    <a href="add-car.php" class="btn btn-add">export to excel</a>
+    <a href="add-car.php" class="btn-add">export to excel</a>
         <!-- Tabel History Pemesanan -->
         <table>
             <thead>

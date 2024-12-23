@@ -9,7 +9,6 @@ if (!isset($_SESSION['user_id']) || $_SESSION['role'] !== 'admin') {
 }
 ?>
 <?php include '../includes/header.php'; ?>
-
 <?php include '../includes/navbar.php'; ?>
 
 <!-- Pastikan path CSS sudah benar -->

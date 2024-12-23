@@ -11,7 +11,6 @@ body {
 .admin-content {
     margin-top: 0px;
     flex: 1;
-    transition: margin-left 0.3s ease;
     background-color: #fffafa;
 }
 .admin-navbar:hover {
@@ -27,8 +26,6 @@ body {
     padding-right: 15px;
     padding-bottom: 7px; /* Menambahkan padding agar header lebih besar */
     color: #fff;
-    top: 0;  /* Menjauhkan header dari navbar kiri (dengan asumsi lebar navbar 250px) */ /* Menyesuaikan lebar header setelah memperhitungkan navbar kiri */
-    z-index: 1000;  /* Agar header tetap di atas konten */
 }
 
 /* Ukuran teks pada header */
@@ -41,18 +38,19 @@ body {
 /* Tabel untuk monitoring peminjaman mobil */
 .admin-content table {
     width: 97%;
+    margin-left: 20px;
     border-collapse: collapse;
     margin-top: 0px; /* Memberikan jarak antara tabel dan header yang telah di-fixed */
 }
 
 .admin-content table th, .admin-content table td {
-    padding: 0px;
+    padding: 12px;
     text-align: center;
     background-color: #dae3e331;
 }
 
 .admin-content table th {
-    padding-top: 3px;
+    padding-top: 10px;
     background-color: #c7d7d837;
     color: black;
 }
@@ -65,32 +63,29 @@ body {
     background-color: #f1f1f1;
 }
 
-/* Tombol */
-.admin-content .btn {
+.btn-add{
     display: inline-block;
     padding: 10px 20px;
-    margin: 30px 0px;
+    margin-top: 35px;
+    margin-left: 20px;
+    margin-bottom: 20px;
     border: none;
     border-radius: 20px;
     background-color: #08ba93;
     color: white;
     font-size: 16px;
-    text-decoration: none;
+    text-decoration: dashed;
     cursor: pointer;
     transition: background-color 0.3s;
 }
 
 
-.admin-content .btn:hover {
+.btn-add:hover {
     background-color: #0056b3;
 }
 
 /* Footer */
 
-
-.kiri {
-    margin-left: 25px;
-}
 .admin-content .icon {
     padding-left: 0px;
     margin-top: 8px;

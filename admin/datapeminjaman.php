@@ -18,7 +18,6 @@ if (!isset($_SESSION['user_id']) || $_SESSION['role'] !== 'admin') {
     <div class="header">
         <h1>DATA PEMINJAMAN</h1>
     </div>
-    <div class="kiri">
         <!-- Tabel Data Kendaraan -->
         <table>
             <thead>
@@ -49,10 +48,9 @@ if (!isset($_SESSION['user_id']) || $_SESSION['role'] !== 'admin') {
                                 <td>{$row['status']}</td>
                                 <td style='padding-left: 30px;'>{$row['order']}</td>
                                 <td style='padding-left: 0px;'>
-                                    <a href='edit-car.php?id={$row['id']}'>
-                                    <img src='../assets/images/disetujui-icon.png' class='icon'></a>
-                                    <a href='delete-car.php?id={$row['id']}'onclick='return confirm(\"Yakin ingin menghapus data ini?\");'>
-                                    <img src='../assets/images/ditolak-icon.png' class='icon'</a>
+
+                                    <a href='edit-car.php?id={$row['id']}' class='btn-add'>Disetujui</a>
+                                    <a href='delete-car.php?id={$row['id']}'onclick='return confirm(\"Yakin ingin menghapus data ini?\" );' class='btn-addtolak'>Ditolak</a>
                                 </td>
                             </tr>";
                             $no++;

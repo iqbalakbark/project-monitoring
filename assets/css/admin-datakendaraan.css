@@ -40,41 +40,56 @@ body {
 
 /* Tabel untuk monitoring peminjaman mobil */
 .admin-content table {
+    margin-left: 20px;
     width: 97%;
     border-collapse: collapse;
     margin-top: 5px; /* Memberikan jarak antara tabel dan header yang telah di-fixed */
 }
 
 .admin-content table th, .admin-content table td {
-    padding: 0px;
+    padding: 6px;
+    padding-bottom: 6px;
     text-align: center;
     background-color: #dae3e331;
 }
 
 .admin-content table th {
-    padding-top: 3px;
     background-color: #c7d7d837;
     color: black;
 }
 
 .admin-content table tr:nth-child(even) {
-    background-color: #9d7b7b;
+    background-color: #f1f1f1;
 }
 
 .admin-content table tr:hover {
     background-color: #f1f1f1;
 }
-
-/* Tombol */
-.admin-content .btn {
+.btn-add{
     display: inline-block;
     padding: 10px 20px;
-    margin: 30px 0px;
+    margin-top: 35px;
+    margin-left: 20px;
+    margin-bottom: 20px;
     border: none;
     border-radius: 20px;
     background-color: #08ba93;
     color: white;
     font-size: 16px;
+    text-decoration: dashed;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+/* Tombol */
+.admin-content .btn {
+    display: inline-block;
+    margin-top: 5px;
+    width: 50%px;
+    height: 30px ;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    font-size: 10px;
     text-decoration: none;
     cursor: pointer;
     transition: background-color 0.3s;
@@ -84,6 +99,9 @@ body {
 .admin-content .btn:hover {
     background-color: #0056b3;
 }
+.btn-add:hover {
+    background-color: #0056b3;
+}
 
 /* Footer */
 
@@ -91,8 +109,61 @@ body {
 .kiri {
     margin-left: 25px;
 }
-.admin-content .icon {
-    margin-top: 5px;
-    width: 30px;
-    height: 30px ;
-}
+
+
+
+
+    /* Modal Style */
+    .modal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+    }
+
+    .modal-content {
+        background-color: white;
+        margin-left: 20px;
+        margin: 15% auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 80%;
+        max-width: 600px;
+    }
+
+    .close-btn {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+    .close-btn:hover,
+
+    .close-btn:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    /* Style untuk form dalam modal */
+    .form-group {
+        margin-bottom: 15px;
+    }
+
+    .form-group label {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    .form-group select {
+        width: 100%;
+        padding: 8px;
+        margin: 5px 0;
+        box-sizing: border-box;
+    }

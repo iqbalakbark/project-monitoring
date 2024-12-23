@@ -12,7 +12,7 @@ if (!isset($_SESSION['user_id']) || $_SESSION['role'] !== 'user') {
 <?php include '../includes/header.php'; ?>
 <?php include '../includes/navbar.php'; ?>
 
-<link rel="stylesheet" href = "../assets/css/user-dashboard.css">
+<link rel="stylesheet" href = "../assets/css/user-statuspeminjaman.css">
 
 <?php include '../includes/navbaruser.php'; ?>
 
@@ -32,7 +32,6 @@ if (!isset($_SESSION['user_id']) || $_SESSION['role'] !== 'user') {
                 <th>No Polisi      </th>
                 <th>jenis Kendaraan</th>
                 <th>status         </th>
-                <th>action         </th
             <tr>
         <thead>
             <tbody>
@@ -40,8 +39,7 @@ if (!isset($_SESSION['user_id']) || $_SESSION['role'] !== 'user') {
                 <td></td>
                 <td></td>
                 <td></td>
-                <td></td>
-                <td><a href="add-car.php" class="btn-add">Pesan Kendaraan  </a></td>
+                <td><a href="add-car.php" class="btn-add"> status </a></td>
             <tbody>
     </table>
 </div>
