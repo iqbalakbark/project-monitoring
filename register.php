@@ -14,7 +14,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     // Query SQL untuk memasukkan data ke tabel users
     $query = "INSERT INTO users (name, email, password, role, created_at) VALUES (:name, :email, :password, :role, :created_at)";
-    $stmt = $conn->prepare($query);
+    $stmt = $pdo->prepare($query);
 
     // Bind parameter
     $stmt->bindParam(':name', $name);
