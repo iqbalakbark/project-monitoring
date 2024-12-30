@@ -1,0 +1,111 @@
+/* Umum */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    display: flex;
+}
+
+/* Konten Utama */
+.kabid-content {
+    margin-top: 0px;
+    flex: 1;
+    background-color: #fffafa;
+}
+.kabid-navbar:hover {
+    width: 280px;  /* Navbar akan meluas pada hover */
+}
+
+/* Heading utama */
+.header {
+
+    margin-top: 0px;
+    margin-left: 0px;
+    padding-top: 0px;
+    padding-right: 15px;
+    padding-bottom: 7px; /* Menambahkan padding agar header lebih besar */
+    color: #000000;
+}
+.header h1 {
+    background-color: #029f99;
+    padding-bottom: 7px;
+    padding-top: 15px;
+    font-size: 20px; 
+    margin: 0;
+    padding-left: 15px;
+}
+.header p {
+    font-style: italic;
+    margin-left: 20px;
+    color: #5f5f5f;
+}
+
+/* Tabel user */
+.kabid-content table {
+    margin-left: 20px;
+    width: 97%;
+    border-collapse: collapse;
+     /* Memberikan jarak antara tabel dan header yang telah di-fixed */
+}
+
+.kabid-content table th, .kabid-content table td {
+    padding-top: 6px;
+    padding-bottom: 6px;
+    text-align: center;
+    background-color: #dae3e331;
+}
+
+.kabid-content table th {
+    background-color: #c7d7d837;
+    color: black;
+}
+
+.kabid-content table tr:nth-child(even) {
+    background-color: #f1f1f1;
+}
+
+.kabid-content table tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Tombol */
+.btn-add{
+    display: inline-block;
+    padding: 10px 10px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 20px;
+    background-color: #08ba93;
+    color: white;
+    font-size: 16px;
+    text-decoration: dashed;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.btn-addtolak {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 20px;
+    background-color: #ff0000;
+    color: white;
+    font-size: 16px;
+    text-decoration: dashed;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-add:hover {
+    background-color: #0056b3;
+}
+.btn-addtolak:hover {
+    background-color: #0056b3;
+}
+.admin-content .btn:hover {
+    background-color: #0056b3;
+}
